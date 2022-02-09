@@ -30,7 +30,7 @@ def emojified(guess: str, secret: str) -> str:
     e: str = ""
     i: int = 0
     while i < len(secret):  
-        if guess[i] == secret[i]:
+        if guess[i] == secret[i]:  # makes sure that the program is checking the exact same index for the guess as the response 
             e = e + GREEN_BOX   
         else:
             if contains_char(secret, guess[i]) is True:
